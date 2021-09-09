@@ -1,0 +1,16 @@
+     
+     
+       
+
+
+       <div class="container  text-center">
+            <h2>List of places</h2>
+            {{#each places}}
+            <h3>{{ name}}</h1>
+                <h4>{{type}}</h4> 
+            <a class="btn dark " href="/places/edit?place_id={{id}}">editar</a>  
+            [<a href="/places/delete-place?place_id={{_id}}">delete</a>]
+              
+                {{/each}}
+       </div>
+    
